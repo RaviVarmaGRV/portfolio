@@ -6,7 +6,7 @@ function AllProjects({myProjects}) {
     const [languageSelected, setLanguage] = useState(0);
 
     var projects= [
-        [{title:"Pock Paper Scissor",img:"rockPaperScissors",link:"https://rpsgame-uvqn.onrender.com/"},
+        [{title:"Rock Paper Scissor",img:"rockPaperScissors1",link:"https://rpsgame-uvqn.onrender.com/"},
         {title:"Solar System",img:"solarFamily",link:"https://solarfamily-1.onrender.com/"}],
 
         [{title:"Type Writer",img:"typeWriterJS",link:"https://ravig-0159-8443.zcodeusers.in/assignment25js/type.html"},
@@ -19,7 +19,7 @@ function AllProjects({myProjects}) {
 
         [{title:"Tennis Clash",img:"tennisScratch",link:"https://scratch.mit.edu/projects/1041086821/"},
         {title:"House drawing",img:"houseScratch",link:"https://scratch.mit.edu/projects/1037903862/"},
-        {title:"My name",img:"nameScratch",link:"https://scratch.mit.edu/projects/1039337181/"}],
+        {title:"Name animation",img:"nameScratch",link:"https://scratch.mit.edu/projects/1039337181/"}],
     ];
     return(
         <div className="allProjects" ref={myProjects}>    

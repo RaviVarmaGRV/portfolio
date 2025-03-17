@@ -29,7 +29,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 0px;
-    border-bottom: 1px solid var(--bordersClr);
+    /* border-bottom: 1px solid var(--bordersClr); */
 }
 
 .header{
@@ -93,16 +93,26 @@ ul li:hover::before{
 .homeMain{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.homeLeft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .homeMainLeft{
-    width: 50%;
+    width: 610px;
     height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    padding-left: 200px;
+    /* padding-left: 200px */
 }
 
 .role{
@@ -132,10 +142,10 @@ ul li:hover::before{
 }
 
 .homeMainRight{
-    width: 50%;
-    display: flex;
+    width: 500px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .imgHolder{
@@ -165,18 +175,9 @@ ul li:hover::before{
     initial-value: 0turn;
 }
 
-@keyframes bg-turn {
-    from{
-        --border-angle:0turn;
-    }
-    to{
-        --border-angle:1turn;
-    }
-}
-
-.imgHolder:hover{
+/* .imgHolder:hover{
     animation-play-state: paused;
-}
+} */
 
 .picture{
     transform: rotate(-45deg);
@@ -227,15 +228,6 @@ ul li:hover::before{
     linear-gradient(var(--blackBg), var(--blackBg)) padding-box, 
     linear-gradient(to left,var(--blackBg), var(--pinkishViolet)) border-box;
 }
-
-@keyframes rotate {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
   
 .viratImg{
     position: absolute;
@@ -268,6 +260,7 @@ ul li:hover::before{
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 1px;
 }
 
 .topPicks{
@@ -275,7 +268,7 @@ ul li:hover::before{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid var(--bordersClr);
+    /* border-bottom: 1px solid var(--bordersClr); */
 }
 
 .bestFiveDiv{
@@ -341,6 +334,7 @@ ul li:hover::before{
 
 .projectImg{
     border-radius: 20px;
+    opacity: .7;
 }
 
 .changeProjectIcons{
@@ -354,6 +348,8 @@ ul li:hover::before{
     cursor: pointer;
     background: var(--blackBg);
     box-shadow: 0px 0px 25px var(--pink);
+    border: none;
+    color: var(--whiteClr);
 }
 
 .changeProjectIcons:hover{
@@ -379,7 +375,7 @@ ul li:hover::before{
 
 .skillsPage{
     height: 100vh;
-    border-bottom: 1px solid var(--bordersClr) ;
+    /* border-bottom: 1px solid var(--bordersClr) ; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,8 +430,7 @@ ul li:hover::before{
 }
 
 .allProjects{
-    height: 60vh;
-    padding-top: 100px;
+    height: 720px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,10 +440,11 @@ ul li:hover::before{
 .projectNavbar{
     height: 100px;
     width: 100%;
-    border-top: 1px solid var(--bordersClr) ;
-    border-bottom: 1px solid var(--bordersClr) ;
+    /* border-top: 1px solid var(--bordersClr) ;
+    border-bottom: 1px solid var(--bordersClr) ; */
     display: flex;
     justify-content: center;
+    gap: 40px;
 }
 
 .techsInNavBar{
@@ -457,10 +453,16 @@ ul li:hover::before{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid var(--bordersClr) ;
-    border-right: 1px solid var(--bordersClr) ;
+    border: 1px solid var(--bordersClr) ;
+    /* border-right: 1px solid var(--bordersClr) ; */
+    border-radius: 15px;
     cursor: pointer;
     transition: background 1s ease;
+    background-color: transparent;
+    color: var(--whiteClr);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    
 
     /* background: linear-gradient(to right, var(--pink), var(--pinkishViolet));     */
 }
@@ -472,12 +474,13 @@ ul li:hover::before{
 .mainProject{
     text-decoration: none;
     color: white;
+    width: fit-content;
 }
 
 .projects{
     width: 1200px;
     display: flex;
-    gap: 150px;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -508,24 +511,53 @@ ul li:hover::before{
     position: sticky;
     top: 0px;
     padding-top: 40px ;
-    transition: opacity 1s;
+    /* transition: opacity 1s; */
     z-index: 3;
     backdrop-filter: blur(15px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    animation: opacityChanger 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50% ;
 }
 
 .projectImgg{
     height: 300px;
-    width: 300px;
+    width: 500px;
     border-radius: 20px;
 }
 
+@keyframes bg-turn {
+    from{
+        --border-angle:0turn;
+    }
+    to{
+        --border-angle:1turn;
+    }
+}
 
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
-
+@keyframes opacityChanger {
+    0%,50% {
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+}
 
 @keyframes appear {
     from{
-        transform: translateX(100px);
+        transform: translateX(200px);
         opacity: 0;
     }
     to{
@@ -575,4 +607,19 @@ ul li:hover::before{
 
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--pink);
+}
+
+@media (max-width:1450px) {
+    body{
+        padding: 0px 120px;
+    }
+
+    .projectImgg{
+        height: 250px;
+        width: 400px;
+    }
+
+    .allProjects{
+        height: 630px;
+    }
 }
