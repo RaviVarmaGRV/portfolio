@@ -3,7 +3,7 @@ import TechnologyIcon from "./TechnologyIcon";
 function SkillsPage({mySkills}) {
     return(
         <div className="skillsPage" ref={mySkills}>
-            <p>The <span className="txtGradientClr">technologies</span> I learnt so far,</p>
+            <p>The <span className="txtGradientClr">technologies</span> I learnt,</p>
             <div className="technologies">
                 <TechnologyIcon icon={'react'}/>
                 <TechnologyIcon icon={'node'}/>
@@ -14,7 +14,7 @@ function SkillsPage({mySkills}) {
                 <TechnologyIcon icon={'css'}/>
                 
             </div>
-            <p>I hope it will keep <span className="txtGradientClr">extending...</span></p>
+            <p>I wish it will keep <span className="txtGradientClr">extending...</span></p>
         </div>
     )
 }

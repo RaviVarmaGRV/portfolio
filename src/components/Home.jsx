@@ -13,7 +13,7 @@ function Home({home, mySkills, myBest, myProjects}) {
                 {/* <div className="homeLeft"> */}
                     <div className="homeMainLeft">
                         <p className="role">I am trained in Front-end development</p>
-                        <h1 className="iAm">Hello I'm <br /> <span className="bigName">Ravi Varma</span> </h1>
+                        <h1 className="iAm">I'm <br /><span className="bigName"> Ravi Varma</span> </h1>
                         <div className="descDiv">
                             <p className="description">I strive to create clean and elegant designs.</p>
                             <p className="description">I transform challenges into solutions, with a touch of code and creativity.</p>
