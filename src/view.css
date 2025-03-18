@@ -149,8 +149,8 @@ ul li:hover::before{
 }
 
 .imgHolder{
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     transform: rotate(45deg);
     --border-angle:0turn;
     --main-bg: conic-gradient(
