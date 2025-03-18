@@ -39,7 +39,7 @@ function Home({home, mySkills, myBest, myProjects}) {
                 
                 <div className="homeMainRight">
                     <div className="imgHolder">
-                        <img src="ravi.png" alt="" className="picture"/>
+                        <img src="raviVarma.png" alt="" className="picture"/>
                     </div>
                 </div>
             </div>
