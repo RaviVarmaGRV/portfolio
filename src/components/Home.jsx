@@ -13,7 +13,26 @@ function Home({home, mySkills, myBest, myProjects}) {
                         <h1 className="iAm">Hello I'm <br /> <span className="bigName">Ravi Varma</span> </h1>
                         <div className="descDiv">
                             <p className="description">I strive to create clean and elegant designs.</p>
-                        </div>                
+                        </div>    
+                        <div class="iconsDiv">
+                            <a href="mailto:ravi.g@zohocorp.com" target="_blank">
+                                <div class="iconHolder">
+                                    <img src="mailIcon.png" alt="" class="icons" />
+                                </div>
+                            </a>
+                            <a href="https://one.zoho.com/zohoone/zohocorp/home/cxapp/people/zpeoplehr/zp#home/user/profile-id:2803000812685670" target="_blank">
+                                <div class="iconHolder">
+                                    <img src="peopleIcon.png" alt="" class="icons" />
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+919342505918" target="_blank">
+                                <div class="iconHolder">
+                                    <img src="callIcon.png" alt="" class="icons" id="callIcon" />
+                                </div>
+                            </a>
+                            
+                        </div>            
                     </div>
                 {/* </div> */}
                 
@@ -22,7 +41,7 @@ function Home({home, mySkills, myBest, myProjects}) {
                         <img src="virat.png" className="viratImg" alt="" />
                     </div> */}
                     <div className="imgHolder">
-                        <img src="profilePic.jpg" alt="" className="picture"/>
+                        <img src="ravi.png" alt="" className="picture"/>
                     </div>
                 </div>
             </div>

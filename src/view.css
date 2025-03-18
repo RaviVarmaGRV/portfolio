@@ -29,7 +29,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 0px;
-    /* border-bottom: 1px solid var(--bordersClr); */
 }
 
 .header{
@@ -112,7 +111,6 @@ ul li:hover::before{
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    /* padding-left: 200px */
 }
 
 .role{
@@ -409,7 +407,7 @@ ul li:hover::before{
     filter: grayscale(1);
     transition: filter .5s;
 
-    animation: appear linear 1s;
+    animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 50% ;
 }
@@ -438,7 +436,7 @@ ul li:hover::before{
 }
 
 .projectNavbar{
-    height: 100px;
+    height: 90px;
     width: 100%;
     /* border-top: 1px solid var(--bordersClr) ;
     border-bottom: 1px solid var(--bordersClr) ; */
@@ -517,15 +515,48 @@ ul li:hover::before{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    animation: opacityChanger 2s linear;
+    /* animation: opacityChanger 2s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50% ;
+    animation-range: entry 0% cover 50% ; */
 }
 
 .projectImgg{
     height: 300px;
     width: 500px;
     border-radius: 20px;
+}
+
+.iconsDiv{
+    display: flex;
+    gap: 35px;
+
+}
+
+.icons{
+    height: 30px;
+    width: 30px;
+
+    transform: scale(.7);
+}
+
+#callIcon{
+    transform: scale(.9);
+}
+
+.iconHolder{
+    cursor: pointer;
+    box-shadow:0px 0px 25px var(--pink);
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+}
+
+.iconHolder:hover{
+    background:linear-gradient(to right, var(--pink), var(--pinkishViolet)) ;
 }
 
 @keyframes bg-turn {
@@ -558,6 +589,17 @@ ul li:hover::before{
 @keyframes appear {
     from{
         transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear2 {
+    from{
+        transform: translateX(100px);
         opacity: 0;
     }
     to{
@@ -615,11 +657,38 @@ ul li:hover::before{
     }
 
     .projectImgg{
-        height: 250px;
-        width: 400px;
+        height: 200px;
+        width: 365px;
     }
 
     .allProjects{
         height: 630px;
+    }
+
+    .techsInNavBar{
+        width: 182px;
+    }
+    .homeMain{
+        gap: 87px;
+    }
+
+    .myAchievements{
+        justify-content: space-between;
+    }
+
+    /* .singleTechnology{
+        animation: appear2 linear;
+    } */
+
+    .skillsPage{
+        gap: 50px;
+    }
+
+    .technologies{
+        gap: 53px;
+    }
+
+    .singleTechnology{
+        animation-range: entry 0% cover 38% ;
     }
 }
