@@ -20,7 +20,7 @@ body{
     padding: 0px 150px;
     font-family: "Roboto", sans-serif;
     color: #FCFFFF;
-    position: relative;
+    /* position: relative; */
 }
 
 .homePage{
@@ -28,7 +28,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px 0px;
+    justify-content: center;
+    /* padding: 50px 0px;
+    padding-top: 0px; */
 }
 
 .header{
@@ -504,11 +506,15 @@ ul li:hover::before{
     color: var(--whiteClr);
 }
 
-.secondHeader{
+.forHeader{
     opacity: 1;
-    position: sticky;
+    position: fixed;
     top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 50px;
     padding-top: 40px ;
+
     /* transition: opacity 1s; */
     z-index: 3;
     backdrop-filter: blur(15px);
@@ -581,7 +587,7 @@ ul li:hover::before{
     0%,50% {
         opacity: 0;
     }
-    60%{
+    60%,100%{
         opacity: 1;
     }
 }
@@ -651,6 +657,20 @@ ul li:hover::before{
     background-color: var(--pink);
 }
 
+@media (max-width:1712px) {
+    .projectImgg{
+        width: 450px;
+        height: 275px;
+    }
+}
+
+@media (max-width:1550px) {
+    .projectImgg{
+        width: 400px;
+        height: 250px;
+    }
+}
+
 @media (max-width:1450px) {
     body{
         padding: 0px 120px;
@@ -690,5 +710,20 @@ ul li:hover::before{
 
     .singleTechnology{
         animation-range: entry 0% cover 38% ;
+    }
+}
+
+@media (max-width:1288px) {
+    .iAm{
+        font-size: 80px;
+    }
+
+    .imgHolder{
+        height: 400px;
+        width: 400px;
+    }
+
+    .divsInBestFive{
+        width: 500px;
     }
 }

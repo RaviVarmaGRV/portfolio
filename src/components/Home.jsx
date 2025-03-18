@@ -5,7 +5,10 @@ function Home({home, mySkills, myBest, myProjects}) {
     return(
        
         <div className="homePage" ref={home}>
-            <Header home={home} mySkills={mySkills} myBest={myBest} myProjects={myProjects} ></Header>
+            {/* <div className="forHeader">
+                <Header home={home} mySkills={mySkills} myBest={myBest} myProjects={myProjects} ></Header>
+
+            </div> */}
             <div className="homeMain">
                 {/* <div className="homeLeft"> */}
                     <div className="homeMainLeft">

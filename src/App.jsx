@@ -8,16 +8,16 @@ import { useEffect, useState, useRef } from "react";
 
 function App() {
   var [showSecHeader,setSecHeader]=useState(false);
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
-      if(window.scrollY>990){
-        setSecHeader(true);
-      }
-      else{
-        setSecHeader(false);
-      }
-    })
-  },[])
+  // useEffect(()=>{
+  //   window.addEventListener('scroll',()=>{
+  //     if(window.scrollY>980){
+  //       setSecHeader(true);
+  //     }
+  //     else{
+  //       setSecHeader(false);
+  //     }
+  //   })
+  // },[])
 
   var home=useRef();
   var mySkills=useRef();
@@ -26,10 +26,11 @@ function App() {
 
   return (
     <>
-      <Home home={home} mySkills={mySkills} myBest={myBest} myProjects={myProjects} />
-      <div className="secondHeader" style={showSecHeader?{opacity:1}:{opacity:0}}>
+      <div className="forHeader" style={showSecHeader?{opacity:1}:{opacity:1}}>
         <Header home={home} mySkills={mySkills} myBest={myBest} myProjects={myProjects}></Header>
       </div>
+      <Home home={home} mySkills={mySkills} myBest={myBest} myProjects={myProjects} />
+      
       
       <SkillsPage mySkills={mySkills} />
       <BestFive myBest={myBest} />
