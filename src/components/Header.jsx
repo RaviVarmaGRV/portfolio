@@ -7,13 +7,13 @@ function Header({home, mySkills, myBest, myProjects}) {
 
             <ul className="headersRight">
                 <li onClick={()=>home.current.scrollIntoView({behavior:'smooth',block:'start'})}>Home</li>
-                <li onClick={()=>mySkills.current.scrollIntoView({behavior:'smooth',block:'start'})}>My Skills</li>
+                <li onClick={()=>mySkills.current.scrollIntoView({behavior:'smooth',block:'start'})}>Skills</li>
                 <li onClick={()=>myBest.current.scrollIntoView({behavior:'smooth',block:'start'})}>Top Picks</li>
-                <li onClick={()=>myProjects.current.scrollIntoView({behavior:'smooth',block:'start'})}>My Projects</li>
+                <li onClick={()=>myProjects.current.scrollIntoView({behavior:'smooth',block:'start'})}>Projects</li>
             </ul>
             
         </header>
     )
 }
 
-export default Header
+export default Header;

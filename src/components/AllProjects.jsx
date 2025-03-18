@@ -6,7 +6,7 @@ function AllProjects({myProjects}) {
     const [languageSelected, setLanguage] = useState(0);
 
     var projects= [
-        [{title:"Rock Paper Scissor",img:"rockPaperScissors1",link:"https://rpsgame-uvqn.onrender.com/"},
+        [{title:"Rock Paper Scissors",img:"rockPaperScissors1",link:"https://rpsgame-uvqn.onrender.com/"},
         {title:"Solar System",img:"solarFamily",link:"https://solarfamily-1.onrender.com/"}],
 
         [{title:"Type Writer",img:"typeWriterJS",link:"https://ravig-0159-8443.zcodeusers.in/assignment25js/type.html"},
