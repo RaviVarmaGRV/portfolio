@@ -336,6 +336,7 @@ ul li:hover::before{
 .projectImg{
     border-radius: 20px;
     opacity: .7;
+    width: 100%;
 }
 
 .changeProjectIcons{
@@ -479,7 +480,7 @@ ul li:hover::before{
 }
 
 .projects{
-    width: 1200px;
+    /* width: 1200px; */
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -608,17 +609,6 @@ ul li:hover::before{
     }
 }
 
-@keyframes appear2 {
-    from{
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
 @keyframes moveRightAni {
     0%{
         transform: translateX(0px);
@@ -662,28 +652,28 @@ ul li:hover::before{
     background-color: var(--pink);
 }
 
-@media (max-width:1712px) {
+@media screen and (max-width:1712px) {
     .projectImgg{
         width: 450px;
         height: 275px;
     }
 }
 
-@media (max-width:1550px) {
+@media screen and (max-width:1550px) {
     .projectImgg{
         width: 400px;
         height: 250px;
     }
 }
 
-@media (max-width:1450px) {
+@media screen and (max-width:1450px) {
     body{
         padding: 0px 120px;
     }
 
     .projectImgg{
         height: 200px;
-        width: 365px;
+        width: 330px;
     }
 
     .allProjects{
@@ -701,10 +691,6 @@ ul li:hover::before{
         justify-content: space-between;
     }
 
-    /* .singleTechnology{
-        animation: appear2 linear;
-    } */
-
     .skillsPage{
         gap: 50px;
     }
@@ -716,9 +702,69 @@ ul li:hover::before{
     .singleTechnology{
         animation-range: entry 0% cover 38% ;
     }
+
+    .projectNavbar{
+        height: 80px;
+    }
 }
 
-@media (max-width:1288px) {
+@media screen and (max-width:1320px) {
+    .divsInBestFive{
+        width: 500px;
+    }
+
+    .projectImg{
+        height: 350px;
+    }
+
+    .projectNavbar{
+        height: 80px;
+    }
+
+    .imgHolder{
+        height: 350px;
+        width: 350px;
+    }
+
+    .homeMainRight{
+        width: 450px;
+    }
+
+    /* .techsInNavBar{
+        font-size: 18px;
+    }
+
+    .projectImgg{
+        height: 175px;
+        width: 330px;
+    }
+}
+
+@media screen and (max-width:1320px) { */
+    .projectImgg{
+        width: 100%;
+    }
+
+    .singleProject{
+        width: 100%;
+    }
+
+    .aTag{
+        width: 43%;
+    }
+
+    .projectNavbar{
+        height: 70px;
+    }
+
+    .techsInNavBar{
+        width: 150px;
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width:1288px) {
     .iAm{
         font-size: 80px;
     }
@@ -729,6 +775,85 @@ ul li:hover::before{
     }
 
     .divsInBestFive{
-        width: 500px;
+        width: 475px;
     }
+
+}
+
+@media screen and (max-width:1220px) {
+    .divsInBestFive{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .technologies{
+        width: 1100px;
+    }
+
+    .singleTechnology{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .divsInBestFive{
+        width: 400px;
+    }
+
+    /* .aTag{
+        width: 23.5%;
+    } */
+
+    .projectNavbar{
+        height: 65px;
+    }
+
+    .techsInNavBar{
+        width: 125px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1136px) {
+    .iAm{
+        font-size: 70px;
+    }
+
+    .imgHolder{
+        height: 300px;
+        width: 300px;
+    }
+
+    .homeMainRight{
+        width: 520px;
+    }
+}
+
+@media screen and (max-width:1136px) {
+    .homeMainRight{
+        width: 485px;
+    }
+
+    .technologies{
+        width: 900px;
+    }
+
+    .projectNum{
+        font-size: 60px;
+    }
+
+    .projectTitle{
+        font-size: 35px;
+    }
+
+    .divsInBestFive{
+        width: 375px;
+    }
+
+    .projectImg{
+        height: 300px;
+    }
+
 }
